@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AimLock V4 Login</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#ffffff,#fff6c2,#ffd84d);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.box{
+    width:340px;
+    background:rgba(255,255,255,.92);
+    padding:25px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 0 20px gold;
+}
+
+h2{
+    color:#d89b00;
+    margin-bottom:18px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:8px 0;
+    border:none;
+    border-radius:10px;
+    background:#fff8d8;
+    outline:none;
+    font-size:15px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    margin-top:12px;
+    border:none;
+    border-radius:10px;
+    background:gold;
+    color:#222;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#ffcc00;
+}
+
+#panel{
+    display:none;
+}
+
+.info{
+    margin-top:15px;
+    color:#444;
+    line-height:26px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+<div id="login">
+<h2>✨ AIMLOCK V4 ✨</h2>
+
+<input type="text" id="user" placeholder="Tài khoản">
+<input type="password" id="pass" placeholder="Mật khẩu">
+
+<button onclick="login()">Đăng Nhập</button>
+
+<p style="margin-top:15px;color:#999;font-size:13px;">
+Vui lòng đăng nhập để sử dụng.
+</p>
+</div>
+
+<div id="panel">
+<h2>🟡 AIMLOCK V4</h2>
+
+<div class="info">
+✅ Trạng thái: Đã kích hoạt<br>
+🎯 Tâm nhạy: ON<br>
+⚡ Hiệu năng: Tối ưu<br>
+📱 Hỗ trợ iOS
+</div>
+
+<button onclick="alert('AimLock V4 đã được kích hoạt (Kich hoạt xong nhớ khởi động lại máy ngâm 20phut rồi vô game test nhé).')">
+🚀 Kích Hoạt
+</button>
+
+</div>
+
+</div>
+
+<script>
+function login(){
+
+let tk=document.getElementById("user").value;
+let mk=document.getElementById("pass").value;
+
+if(tk==="boi" && mk==="367"){
+document.getElementById("login").style.display="none";
+document.getElementById("panel").style.display="block";
+}else{
+alert("Sai tài khoản hoặc mật khẩu!");
+}
+
+}
+</script>
+
+</body>
+</html>
